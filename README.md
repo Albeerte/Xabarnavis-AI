@@ -1,4 +1,4 @@
-# 🛡️ Xabarnavis AI
+# xabarnavis.png Xabarnavis AI
 
 > Raqamli kontentning haqiqiyligini tekshiruvchi sun’iy intellekt platformasi.
 
