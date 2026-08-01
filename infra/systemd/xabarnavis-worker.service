@@ -1,0 +1,11 @@
+[Unit]
+Description=Xabarnavis worker service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/xabarnavis
+ExecStart=/usr/bin/python -c "print('worker placeholder')"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

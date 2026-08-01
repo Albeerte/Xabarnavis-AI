@@ -1,0 +1,5 @@
+models:
+  - id: image_ai_real_effnet_b0_balanced
+    task: ai_generated_vs_real
+    status: trained
+    artifact: artifacts/runs/legacy/ai_real_effnet_b0_balanced/best.pt

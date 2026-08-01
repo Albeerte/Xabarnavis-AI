@@ -1,0 +1,60 @@
+# Python/runtime
+__pycache__/
+*.pyc
+.venv/
+.venv-training/
+venv/
+
+# Frontend dependencies and build output
+apps/web/node_modules/
+apps/web/.next/
+node_modules/
+.next/
+*.tsbuildinfo
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Large local datasets and model artifacts
+data/datasets/
+data/raw/
+data/processed/
+data/ready/
+data/holdout/
+artifacts/models/
+artifacts/runs/
+artifacts/reports/
+artifacts/logs/
+xabarnavis_datasets/
+xabarnavis_ready_dataset/
+external_models/
+models/
+runs/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Runtime uploads, generated reports, and local media
+storage/uploads/
+storage/reports/
+storage/profiles/
+storage/qrcodes/
+storage/temp/
+storage/external_model_runs/
+storage/clip_adapter_test/
+storage/auth-test-cookie.txt
+storage/*.sqlite3
+storage/*.jpg
+storage/*.jpeg
+storage/*.png
+*.db
+*.wav
+*.mp4
+
+# Logs
+logs/
+*.log
+stdout

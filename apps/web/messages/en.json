@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "analyze": "Analyze",
+    "reports": "Reports",
+    "pricing": "Pricing",
+    "api": "API",
+    "contact": "Contact"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "wrongCredentials": "Email or password is incorrect."
+  },
+  "dashboard": {
+    "totalReports": "Total reports",
+    "fakeDetected": "Fake detected"
+  },
+  "analyze": {
+    "uploadFile": "Upload file",
+    "selectType": "Select analysis type"
+  },
+  "report": {
+    "verdict": "Final verdict",
+    "confidence": "Confidence",
+    "downloadPdf": "Download PDF",
+    "downloadDocx": "Download DOCX",
+    "qrCode": "QR code"
+  },
+  "status": {
+    "authentic": "Authentic",
+    "suspicious": "Suspicious",
+    "fake": "Fake",
+    "aiGenerated": "AI-generated",
+    "manipulated": "Manipulated"
+  },
+  "notification": {
+    "analysisCompleted": "Analysis completed"
+  }
+}

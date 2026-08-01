@@ -1,0 +1,12 @@
+﻿[Unit]
+Description=Xabarnavis FastAPI service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/xabarnavis/apps/api
+ExecStart=/usr/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

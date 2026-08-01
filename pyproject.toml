@@ -1,0 +1,9 @@
+[project]
+name = "xabarnavis"
+version = "0.1.0"
+description = "AI forensic research and product platform for image, audio, video, and text authenticity analysis."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["apps/api"]
+testpaths = ["tests"]

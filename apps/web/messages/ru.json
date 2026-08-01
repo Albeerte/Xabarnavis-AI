@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Главная",
+    "analyze": "Анализ",
+    "reports": "Отчёты",
+    "pricing": "Цены",
+    "api": "API",
+    "contact": "Контакты"
+  },
+  "auth": {
+    "login": "Войти",
+    "register": "Регистрация",
+    "wrongCredentials": "Неверный email или пароль."
+  },
+  "dashboard": {
+    "totalReports": "Всего отчётов",
+    "fakeDetected": "Фейков найдено"
+  },
+  "analyze": {
+    "uploadFile": "Загрузить файл",
+    "selectType": "Выберите тип анализа"
+  },
+  "report": {
+    "verdict": "Итоговое решение",
+    "confidence": "Уверенность",
+    "downloadPdf": "Скачать PDF",
+    "downloadDocx": "Скачать DOCX",
+    "qrCode": "QR-код"
+  },
+  "status": {
+    "authentic": "Подлинный",
+    "suspicious": "Подозрительный",
+    "fake": "Фейк",
+    "aiGenerated": "Создано ИИ",
+    "manipulated": "Изменено"
+  },
+  "notification": {
+    "analysisCompleted": "Анализ завершён"
+  }
+}

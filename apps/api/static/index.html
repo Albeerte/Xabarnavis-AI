@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xabarnavis AI Forensics Engine</title>
+    <link rel="icon" type="image/png" href="/xabarnavis-logo.png" />
+    <link rel="apple-touch-icon" href="/xabarnavis-logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <section class="auth-screen public-screen" id="authScreen">
+      <header class="public-nav">
+        <div class="brand-row">
+          <div class="brand-mark"><img src="/xabarnavis-logo.png" alt="Xabarnavis AI logo" /></div>
+          <div>
+            <h1>Xabarnavis</h1>
+            <p>AI Forensics Engine</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#publicHow">How it works</a>
+          <a href="#publicFeatures">Features</a>
+          <a href="#publicAuth">Login</a>
+        </nav>
+      </header>
+
+      <section class="public-hero">
+        <div class="public-copy">
+          <span class="soon-badge">AI content detector</span>
+          <h1>Detect AI-generated content in seconds</h1>
+          <p>Scan image, video, audio, and text evidence with a legal-report workflow built for Xabarnavis. Image analysis is live; other media analyzers are prepared for the next model adapters.</p>
+          <div class="public-media-tabs">
+            <span class="active">Image</span>
+            <span>Video</span>
+            <span>Audio</span>
+            <span>Text</span>
+          </div>
+        </div>
+
+        <div class="public-detector-card">
+          <div class="public-drop">
+            <span class="drop-icon">+</span>
+            <strong>Drag and drop your file here</strong>
+            <small>Choose a file after login to create a private legal report</small>
+            <a class="public-cta" href="#publicAuth">Start with Image Detector</a>
+          </div>
+          <p>Supports images now. Video, audio, and text analyzers are coming soon.</p>
+        </div>
+      </section>
+
+      <section class="public-stats">
+        <article><strong>96.85%</strong><span>Xabarnavis 0.1 accuracy</span></article>
+        <article><strong>99.67%</strong><span>AUC on trained run</span></article>
+        <article><strong>4+</strong><span>Ready image engines</span></article>
+        <article><strong>DOCX</strong><span>Legal report export</span></article>
+      </section>
+
+      <section class="public-models">
+        <h2>Detects signals from modern AI generators</h2>
+        <div>
+          <span>Midjourney</span>
+          <span>DALL-E</span>
+          <span>Stable Diffusion</span>
+          <span>Flux</span>
+          <span>Firefly</span>
+          <span>Leonardo</span>
+          <span>Sora frames</span>
+          <span>Runway</span>
+          <span>Edited photos</span>
+          <span>Metadata anomalies</span>
+        </div>
+      </section>
+
+      <section class="public-how" id="publicHow">
+        <article>
+          <span>01</span>
+          <h3>Upload</h3>
+          <p>Log in, upload evidence, and attach a case note for the report.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Analyze</h3>
+          <p>Xabarnavis checks model scores, ELA, metadata, noise, compression, and provenance context.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Export</h3>
+          <p>Download DOCX and JSON reports tied to your account and individual case page.</p>
+        </article>
+      </section>
+
+      <section class="public-bottom">
+        <div class="public-features" id="publicFeatures">
+          <h2>Everything you need to spot suspicious media</h2>
+          <div class="public-feature-grid">
+            <article><strong>AI Image Detector</strong><p>Live image analysis with trained Xabarnavis models and external detectors.</p></article>
+            <article><strong>AI Heatmaps</strong><p>ELA and heatmap artifacts are saved into legal reports.</p></article>
+            <article><strong>Provenance aware</strong><p>C2PA, watermark, metadata, and missing-signal caveats are explained clearly.</p></article>
+            <article><strong>Report archive</strong><p>Every user gets private report history and individual report pages.</p></article>
+          </div>
+        </div>
+
+        <div class="auth-card" id="publicAuth">
+          <div class="brand-row">
+            <div class="brand-mark"><img src="/xabarnavis-logo.png" alt="Xabarnavis AI logo" /></div>
+            <div>
+              <h1>Enter Xabarnavis</h1>
+              <p>Private local workspace</p>
+            </div>
+          </div>
+          <div class="auth-tabs">
+            <button class="auth-tab active" type="button" data-auth-mode="login">Login</button>
+            <button class="auth-tab" type="button" data-auth-mode="register">Register</button>
+          </div>
+          <form id="authForm" class="auth-form">
+            <div id="registerFields" hidden>
+              <label>
+                <span>First name</span>
+                <input id="authFirstName" name="first_name" autocomplete="given-name" maxlength="80" />
+              </label>
+              <label>
+                <span>Last name</span>
+                <input id="authLastName" name="last_name" autocomplete="family-name" maxlength="80" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input id="authEmail" name="email" type="email" autocomplete="email" maxlength="160" />
+              </label>
+            </div>
+            <label>
+              <span id="authUsernameLabel">Username or email</span>
+              <input id="authUsername" name="username" autocomplete="username" required minlength="3" maxlength="40" />
+            </label>
+            <label>
+              <span>Password</span>
+              <input id="authPassword" name="password" type="password" autocomplete="current-password" required minlength="6" />
+            </label>
+            <label id="passwordCheckField" hidden>
+              <span>Confirm password</span>
+              <input id="authPasswordCheck" type="password" autocomplete="new-password" minlength="6" />
+            </label>
+            <button class="primary-button" type="submit" id="authSubmit">Login</button>
+            <p class="auth-error" id="authError"></p>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <main class="app-shell" id="appShell" hidden>
+      <aside class="sidebar">
+        <div class="brand-row side-brand">
+          <div class="brand-mark"><img src="/xabarnavis-logo.png" alt="Xabarnavis AI logo" /></div>
+          <div>
+            <h1>Xabarnavis</h1>
+            <p>AI Forensics Engine</p>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Main navigation">
+          <button class="nav-item active" type="button" data-page="dashboard">Dashboard</button>
+          <button class="nav-item" type="button" data-page="image">Image Analyzer <span>LIVE</span></button>
+          <button class="nav-item muted" type="button" data-page="video">Video Analyzer <span>SOON</span></button>
+          <button class="nav-item muted" type="button" data-page="audio">Audio Analyzer <span>SOON</span></button>
+          <button class="nav-item muted" type="button" data-page="text">Text Analyzer <span>SOON</span></button>
+          <button class="nav-item muted" type="button" data-page="archives">Reports</button>
+          <button class="nav-item muted" type="button" data-page="portfolio">Portfolio</button>
+          <button class="nav-item muted" type="button" data-page="notifications">Notifications</button>
+          <button class="nav-item muted" type="button" data-page="settings">Settings</button>
+        </nav>
+
+        <div class="side-footer">
+          <span class="online-dot"></span>
+          <span>Systems Online</span>
+        </div>
+      </aside>
+
+      <section class="main-panel">
+        <div class="ticker">
+          <span>LIVE</span>
+          <p>Multi-model forensic analysis active | Image detection online | Video + Audio + Text pipelines prepared</p>
+        </div>
+
+        <header class="topbar">
+          <div>
+            <p class="breadcrumb" id="breadcrumbLabel">Xabarnavis / Dashboard</p>
+            <h2 id="pageTitle">Tahlil boshqaruv paneli</h2>
+            <p id="pageSubtitle">Yuklangan media fayllaringiz bo'yicha real vaqtli forensic ma'lumotlar va eksport.</p>
+          </div>
+          <div class="top-actions">
+            <button class="ghost-button" type="button" id="themeToggle">Dark</button>
+            <span class="user-pill" id="userPill">User</span>
+            <button class="ghost-button" type="button" id="logoutButton">Logout</button>
+          </div>
+        </header>
+
+        <section class="page active" id="page-dashboard">
+          <section class="stats-grid">
+            <article class="stat-card">
+              <span>Jami tekshiruvlar</span>
+              <strong id="totalCases">0</strong>
+              <p>Hisobingizdagi barcha tahlillar</p>
+            </article>
+            <article class="stat-card">
+              <span>Xavfli topildi</span>
+              <strong id="flaggedCases">0</strong>
+              <p>AI yoki manipulyatsiya ehtimoli yuqori</p>
+            </article>
+            <article class="stat-card">
+              <span>Haqiqiylik darajasi</span>
+              <strong id="realAverage">0%</strong>
+              <p>O'rtacha real score</p>
+            </article>
+            <article class="stat-card">
+              <span>Report eksporti</span>
+              <strong>DOCX</strong>
+              <p>Legal Word va JSON reportlar</p>
+            </article>
+          </section>
+
+          <section class="launcher-grid" aria-label="Analyzer pages">
+            <button class="launcher-card live" type="button" data-page="image">
+              <span>LIVE</span>
+              <strong>Image Analyzer</strong>
+              <small>AI, synthetic, manipulation, EXIF, ELA, heatmap</small>
+            </button>
+            <button class="launcher-card" type="button" data-page="video">
+              <span>SOON</span>
+              <strong>Video Analyzer</strong>
+              <small>Frame forensics, deepfake signals, timeline report</small>
+            </button>
+            <button class="launcher-card" type="button" data-page="audio">
+              <span>SOON</span>
+              <strong>Audio Analyzer</strong>
+              <small>Voice spoof, noise profile, spectral artifacts</small>
+            </button>
+            <button class="launcher-card" type="button" data-page="text">
+              <span>SOON</span>
+              <strong>Text Analyzer</strong>
+              <small>AI writing, source risk, metadata notes</small>
+            </button>
+          </section>
+
+          <section class="panel recent-panel">
+            <div class="section-head">
+              <h3>So'nggi tahlillar</h3>
+              <button class="ghost-button" type="button" id="refreshCases">Refresh</button>
+            </div>
+            <div class="case-list" id="caseList"></div>
+          </section>
+        </section>
+
+        <section class="page" id="page-image">
+          <section class="detector-hero">
+            <span class="soon-badge">AI image detector</span>
+            <h3>Detect AI-generated images in seconds</h3>
+            <p>Upload an image and Xabarnavis will check real-photo probability, AI-generation signals, forensic artifacts, metadata, provenance context, ELA, and legal report evidence.</p>
+          </section>
+
+          <section class="detector-grid">
+            <form class="panel upload-panel detector-card" id="analysisForm">
+              <div class="section-head">
+                <h3>Upload Image</h3>
+                <span id="fileState">No file selected</span>
+              </div>
+
+              <label class="dropzone detector-dropzone" for="imageInput">
+                <input id="imageInput" name="file" type="file" accept="image/*" />
+                <span class="drop-icon">+</span>
+                <strong>Drag and drop image here, or click to upload</strong>
+                <small>Supports JPG, PNG, WEBP, TIFF, BMP</small>
+              </label>
+
+              <div class="preview-wrap" id="previewWrap" hidden>
+                <img id="previewImage" alt="Selected evidence preview" />
+              </div>
+
+              <label class="description-field">
+                <span>Image description / case note</span>
+                <textarea id="imageDescription" name="image_description" rows="3" placeholder="Describe what is shown in the image or add a legal case note."></textarea>
+              </label>
+
+              <div class="section-head model-title">
+                <h3>Detection engines</h3>
+                <button class="ghost-button" type="button" id="selectReady">Ready only</button>
+              </div>
+              <div class="model-list" id="modelList"></div>
+
+              <button class="primary-button detect-cta" type="submit" id="detectButton">Analyze Image</button>
+            </form>
+
+            <section class="panel workspace-panel detector-side" id="workspacePanel">
+              <div class="section-head">
+                <h3>What you get</h3>
+                <span>Ready</span>
+              </div>
+              <div class="workspace-hero detector-side-hero">
+                <span class="soon-badge">Forensic output</span>
+                <h3>AI likelihood, authenticity score, and legal report</h3>
+                <p>Results are tied to your account and can be exported as DOCX or JSON with model-by-model evidence.</p>
+              </div>
+              <section class="workspace-grid detector-feature-list">
+                <article>
+                  <strong>AI image probability</strong>
+                  <p>Scores from selected detectors are fused into a clear verdict.</p>
+                </article>
+                <article>
+                  <strong>Camera and metadata check</strong>
+                  <p>EXIF, software traces, and provenance signals are reviewed.</p>
+                </article>
+                <article>
+                  <strong>C2PA and watermark context</strong>
+                  <p>Report language follows provenance best practices: detected signals help explain origin, while missing signals are not proof that an image is real.</p>
+                </article>
+                <article>
+                  <strong>Heatmap and ELA evidence</strong>
+                  <p>Visual forensic artifacts are saved for report review.</p>
+                </article>
+                <article>
+                  <strong>Legal export</strong>
+                  <p>Generate a single report with all selected model results.</p>
+                </article>
+              </section>
+              <section class="workspace-strip">
+                <div><strong id="workspaceReadyModels">0</strong><span>Ready models</span></div>
+                <div><strong>DOCX</strong><span>Legal report</span></div>
+                <div><strong>C2PA</strong><span>Provenance aware</span></div>
+              </section>
+            </section>
+
+            <section class="panel result-panel detector-side" id="resultPanel" hidden>
+              <div class="section-head">
+                <h3>Detection Result</h3>
+                <span id="caseNumber">Waiting</span>
+              </div>
+              <div class="verdict-band" id="verdictBand">
+                <span class="label">Final verdict</span>
+                <strong id="verdictText"></strong>
+              </div>
+              <div class="score-grid">
+                <div><span>Real</span><strong id="realScore">0%</strong></div>
+                <div><span>AI-generated</span><strong id="aiScore">0%</strong></div>
+                <div><span>Manipulated</span><strong id="manipulatedScore">0%</strong></div>
+              </div>
+              <div class="model-results" id="modelResults"></div>
+              <section class="legal-report">
+                <div class="section-head">
+                  <h3>Legal Report</h3>
+                  <span class="report-actions">
+                    <a id="docxReportLink" href="#" target="_blank" rel="noreferrer" aria-disabled="true">DOCX report</a>
+                    <a id="reportLink" href="#" target="_blank" rel="noreferrer" aria-disabled="true">JSON report</a>
+                  </span>
+                </div>
+                <dl>
+                  <div><dt>SHA-256</dt><dd id="hashValue">-</dd></div>
+                  <div><dt>Confidence</dt><dd id="confidenceValue">-</dd></div>
+                  <div><dt>Model version</dt><dd id="modelVersion">-</dd></div>
+                </dl>
+              <ol id="detectedSigns"></ol>
+              <div class="provenance-note">
+                <strong>Provenance note</strong>
+                <p>C2PA, watermark, metadata, and model signals are supporting evidence. Absence of a signal is not proof that media is authentic.</p>
+              </div>
+            </section>
+          </section>
+        </section>
+        </section>
+
+        <section class="page" id="page-video">
+          <section class="coming-layout">
+            <form class="panel coming-card media-analysis-form" id="videoAnalysisForm">
+              <span class="soon-badge">MVP live</span>
+              <h3>Video AI / Deepfake Analyzer</h3>
+              <p>Video faylni yuklang. Hozir MVP heuristic tahlil ishlaydi; keyin frame extraction va DeepfakeBench adapteri shu joyga ulanadi.</p>
+              <label class="dropzone" for="videoInput">
+                <input id="videoInput" name="file" type="file" accept="video/*" />
+                <span class="drop-icon">+</span>
+                <strong>Video upload</strong>
+                <small id="videoFileState">MP4, MOV, AVI</small>
+              </label>
+              <button class="primary-button detect-cta" type="submit" id="videoDetectButton">Analyze Video</button>
+            </form>
+            <article class="panel pipeline-card media-result-card" id="videoResultPanel">
+              <h3>Video result</h3>
+              <div class="verdict-band" id="videoVerdictBand"><span class="label">Final verdict</span><strong id="videoVerdict">Waiting</strong></div>
+              <div class="score-grid">
+                <div><span>Real video</span><strong id="videoRealScore">0%</strong></div>
+                <div><span>Deepfake</span><strong id="videoFakeScore">0%</strong></div>
+                <div><span>Face manipulation</span><strong id="videoFaceScore">0%</strong></div>
+              </div>
+              <div class="report-actions detail-actions">
+                <a id="videoDocxLink" href="#" target="_blank" rel="noreferrer">DOCX report</a>
+                <a id="videoJsonLink" href="#" target="_blank" rel="noreferrer">JSON report</a>
+              </div>
+              <ol id="videoSigns"></ol>
+            </article>
+          </section>
+        </section>
+
+        <section class="page" id="page-audio">
+          <section class="coming-layout">
+            <form class="panel coming-card media-analysis-form" id="audioAnalysisForm">
+              <span class="soon-badge">MVP live</span>
+              <h3>Audio AI Voice Analyzer</h3>
+              <p>Audio faylni yuklang. Hozir MVP heuristic tahlil ishlaydi; keyin AASIST va wav2vec anti-spoofing adapterlari ulanadi.</p>
+              <label class="dropzone" for="audioInput">
+                <input id="audioInput" name="file" type="file" accept="audio/*" />
+                <span class="drop-icon">+</span>
+                <strong>Audio upload</strong>
+                <small id="audioFileState">WAV, MP3, M4A</small>
+              </label>
+              <button class="primary-button detect-cta" type="submit" id="audioDetectButton">Analyze Audio</button>
+            </form>
+            <article class="panel pipeline-card media-result-card" id="audioResultPanel">
+              <h3>Audio result</h3>
+              <div class="verdict-band" id="audioVerdictBand"><span class="label">Final verdict</span><strong id="audioVerdict">Waiting</strong></div>
+              <div class="score-grid">
+                <div><span>Real voice</span><strong id="audioRealScore">0%</strong></div>
+                <div><span>AI voice</span><strong id="audioAiScore">0%</strong></div>
+                <div><span>Spoof</span><strong id="audioSpoofScore">0%</strong></div>
+              </div>
+              <div class="report-actions detail-actions">
+                <a id="audioDocxLink" href="#" target="_blank" rel="noreferrer">DOCX report</a>
+                <a id="audioJsonLink" href="#" target="_blank" rel="noreferrer">JSON report</a>
+              </div>
+              <ol id="audioSigns"></ol>
+            </article>
+          </section>
+        </section>
+
+        <section class="page" id="page-text">
+          <section class="coming-layout">
+            <form class="panel coming-card media-analysis-form" id="textAnalysisForm">
+              <span class="soon-badge">MVP live</span>
+              <h3>Text AI / Fake News Analyzer</h3>
+              <p>Matnni kiriting. Hozir heuristic tahlil ishlaydi; keyin BERT, XLM-RoBERTa va fake-news adapterlari ulanadi.</p>
+              <label class="description-field">
+                <span>Case title</span>
+                <input id="textTitleInput" name="title" placeholder="news-claim.txt" />
+              </label>
+              <textarea class="text-coming" id="textEvidenceInput" rows="10" placeholder="Tekshiriladigan matnni shu yerga yozing..."></textarea>
+              <button class="primary-button detect-cta" type="submit" id="textDetectButton">Analyze Text</button>
+            </form>
+            <article class="panel pipeline-card media-result-card" id="textResultPanel">
+              <h3>Text result</h3>
+              <div class="verdict-band" id="textVerdictBand"><span class="label">Final verdict</span><strong id="textVerdict">Waiting</strong></div>
+              <div class="score-grid">
+                <div><span>Human</span><strong id="textHumanScore">0%</strong></div>
+                <div><span>AI text</span><strong id="textAiScore">0%</strong></div>
+                <div><span>Claim risk</span><strong id="textRiskScore">0%</strong></div>
+              </div>
+              <div class="report-actions detail-actions">
+                <a id="textDocxLink" href="#" target="_blank" rel="noreferrer">DOCX report</a>
+                <a id="textJsonLink" href="#" target="_blank" rel="noreferrer">JSON report</a>
+              </div>
+              <ol id="textSigns"></ol>
+            </article>
+          </section>
+        </section>
+
+        <section class="page" id="page-archives">
+          <section class="panel recent-panel archive-panel">
+            <div class="section-head">
+              <h3>Reports archive</h3>
+              <button class="ghost-button" type="button" id="refreshArchive">Refresh</button>
+            </div>
+            <div class="case-list" id="archiveCaseList"></div>
+          </section>
+        </section>
+
+        <section class="page" id="page-report-detail">
+          <section class="detail-grid">
+            <article class="panel detail-main">
+              <div class="section-head">
+                <h3 id="detailFilename">Report detail</h3>
+                <button class="ghost-button" type="button" data-page="archives">Back to reports</button>
+              </div>
+              <div class="verdict-band" id="detailVerdictBand">
+                <span class="label">Final verdict</span>
+                <strong id="detailVerdict">-</strong>
+              </div>
+              <div class="score-grid">
+                <div><span>Real</span><strong id="detailReal">0%</strong></div>
+                <div><span>AI-generated</span><strong id="detailAi">0%</strong></div>
+                <div><span>Manipulated</span><strong id="detailManipulated">0%</strong></div>
+              </div>
+              <dl class="detail-list">
+                <div><dt>Case ID</dt><dd id="detailCaseId">-</dd></div>
+                <div><dt>Uploaded</dt><dd id="detailUploaded">-</dd></div>
+                <div><dt>SHA-256</dt><dd id="detailHash">-</dd></div>
+                <div><dt>Confidence</dt><dd id="detailConfidence">-</dd></div>
+                <div><dt>Model version</dt><dd id="detailModelVersion">-</dd></div>
+              </dl>
+              <div class="report-actions detail-actions">
+                <a id="detailDocxLink" href="#" target="_blank" rel="noreferrer">Download DOCX</a>
+                <a id="detailJsonLink" href="#" target="_blank" rel="noreferrer">Open JSON</a>
+              </div>
+            </article>
+            <aside class="panel detail-side">
+              <h3>Report evidence notes</h3>
+              <ol id="detailSigns"></ol>
+              <h3>Model results</h3>
+              <div class="model-results" id="detailModelResults"></div>
+            </aside>
+          </section>
+        </section>
+
+        <section class="page" id="page-portfolio">
+          <section class="portfolio-grid">
+            <article class="panel profile-card">
+              <div class="avatar-mark" id="portfolioAvatar">X</div>
+              <h3 id="portfolioUsername">User</h3>
+              <p id="portfolioBio">Local forensic analyst workspace</p>
+              <dl>
+                <div><dt>Account created</dt><dd id="portfolioCreated">-</dd></div>
+                <div><dt>Username</dt><dd id="portfolioHandle">-</dd></div>
+                <div><dt>Email</dt><dd id="portfolioEmail">-</dd></div>
+                <div><dt>Phone</dt><dd id="portfolioPhone">-</dd></div>
+                <div><dt>Organization</dt><dd id="portfolioOrganization">-</dd></div>
+                <div><dt>Role</dt><dd id="portfolioRole">-</dd></div>
+                <div><dt>Total reports</dt><dd id="portfolioTotal">0</dd></div>
+                <div><dt>Flagged evidence</dt><dd id="portfolioFlagged">0</dd></div>
+              </dl>
+            </article>
+            <article class="panel">
+              <div class="section-head">
+                <h3>Portfolio summary</h3>
+                <span>Private</span>
+              </div>
+              <div class="portfolio-metrics">
+                <div><strong id="portfolioRealAverage">0%</strong><span>Average real score</span></div>
+                <div><strong>DOCX</strong><span>Legal export enabled</span></div>
+                <div><strong>Image</strong><span>Active media type</span></div>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section class="page" id="page-notifications">
+          <section class="panel notifications-panel">
+            <div class="section-head">
+              <h3>Notifications</h3>
+              <button class="ghost-button" type="button" id="markReadButton">Mark all read</button>
+            </div>
+            <div class="notification-list" id="notificationList"></div>
+          </section>
+        </section>
+
+        <section class="page" id="page-settings">
+          <section class="settings-grid">
+            <form class="panel settings-card" id="settingsForm">
+              <div class="section-head">
+                <h3>Account settings</h3>
+                <span>Local only</span>
+              </div>
+              <label class="description-field">
+                <span>Display name</span>
+                <input id="displayNameInput" name="display_name" placeholder="Your display name" />
+              </label>
+              <label class="toggle-row">
+                <span>Email-style report reminders</span>
+                <input id="reportReminderInput" type="checkbox" />
+              </label>
+              <label class="toggle-row">
+                <span>Auto select ready models</span>
+                <input id="autoReadyInput" type="checkbox" checked />
+              </label>
+              <button class="primary-button" type="submit">Save settings</button>
+              <p class="save-note" id="settingsSaved"></p>
+            </form>
+            <article class="panel settings-card">
+              <h3>System preferences</h3>
+              <p>Theme is controlled from the top bar. Settings on this page are stored locally in this browser.</p>
+              <dl>
+                <div><dt>Report format</dt><dd>DOCX + JSON</dd></div>
+                <div><dt>Active analyzer</dt><dd>Image</dd></div>
+                <div><dt>Storage mode</dt><dd>Local machine</dd></div>
+              </dl>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

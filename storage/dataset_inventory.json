@@ -1,0 +1,866 @@
+{
+  "status": "ready",
+  "language": "uz",
+  "generated_at": "2026-07-15T07:58:16.542173+00:00",
+  "note_uz": "Bu hisob lokal papkalardagi mavjud image fayllar asosida tuzilgan.",
+  "dataset_root": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets",
+  "ready_dataset_root": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\ready\\image",
+  "image_extensions": [
+    ".bmp",
+    ".jpeg",
+    ".jpg",
+    ".png",
+    ".tif",
+    ".tiff",
+    ".webp"
+  ],
+  "xabarnavis_datasets": {
+    "total_images": 152676,
+    "total_images_including_auxiliary": 2649414,
+    "by_label": {
+      "real": {
+        "total_images": 132013,
+        "sources": [
+          {
+            "name": "casia_authentic",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\casia_authentic",
+            "image_count": 7491,
+            "by_extension": {
+              ".bmp": 54,
+              ".jpg": 7437
+            }
+          },
+          {
+            "name": "coco_real",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\coco_real",
+            "image_count": 118287,
+            "by_extension": {
+              ".jpg": 118287
+            }
+          },
+          {
+            "name": "hf_real_midjourney_dalle_sd_nano",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\hf_real_midjourney_dalle_sd_nano",
+            "image_count": 6195,
+            "by_extension": {
+              ".jpeg": 1,
+              ".jpg": 4469,
+              ".png": 1159,
+              ".webp": 566
+            }
+          },
+          {
+            "name": "imagenet_real",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\imagenet_real",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "local_camera_real",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\local_camera_real",
+            "image_count": 40,
+            "by_extension": {
+              ".jpg": 40
+            }
+          },
+          {
+            "name": "local_social_real",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\local_social_real",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "raise1k_real",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\real\\raise1k_real",
+            "image_count": 0,
+            "by_extension": {}
+          }
+        ]
+      },
+      "ai_generated": {
+        "total_images": 15540,
+        "sources": [
+          {
+            "name": "aigc_benchmark",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\aigc_benchmark",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "genimage",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\genimage",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "hf_midjourney_dalle_sd_nano",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\hf_midjourney_dalle_sd_nano",
+            "image_count": 6500,
+            "by_extension": {
+              ".jpg": 4000,
+              ".webp": 2500
+            }
+          },
+          {
+            "name": "local_generated",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\local_generated",
+            "image_count": 40,
+            "by_extension": {
+              ".jpg": 40
+            }
+          },
+          {
+            "name": "ms_cocoai",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\ms_cocoai",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "synthbuster",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\synthbuster",
+            "image_count": 9000,
+            "by_extension": {
+              ".png": 9000
+            }
+          },
+          {
+            "name": "wildfake",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\ai_generated\\wildfake",
+            "image_count": 0,
+            "by_extension": {}
+          }
+        ]
+      },
+      "manipulated": {
+        "total_images": 5123,
+        "sources": [
+          {
+            "name": "casia_v2",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\manipulated\\casia_v2",
+            "image_count": 5123,
+            "by_extension": {
+              ".jpg": 2064,
+              ".tif": 3059
+            }
+          },
+          {
+            "name": "coverage",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\manipulated\\coverage",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "defacto",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\manipulated\\defacto",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "imd2020",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\manipulated\\imd2020",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "local_photoshop",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\manipulated\\local_photoshop",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "nist_mfc",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\manipulated\\nist_mfc",
+            "image_count": 0,
+            "by_extension": {}
+          }
+        ]
+      },
+      "test_holdout": {
+        "total_images": 0,
+        "sources": [
+          {
+            "name": "chameleon_hard",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\test_holdout\\chameleon_hard",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "instagram_compressed",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\test_holdout\\instagram_compressed",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "screenshots",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\test_holdout\\screenshots",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "telegram_compressed",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\test_holdout\\telegram_compressed",
+            "image_count": 0,
+            "by_extension": {}
+          },
+          {
+            "name": "unseen_generators",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\test_holdout\\unseen_generators",
+            "image_count": 0,
+            "by_extension": {}
+          }
+        ]
+      }
+    },
+    "auxiliary": {
+      "_downloads": {
+        "total_images": 2496738,
+        "sources": [
+          {
+            "name": "afhq",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\afhq",
+            "image_count": 31933,
+            "by_extension": {
+              ".jpg": 31933
+            }
+          },
+          {
+            "name": "big_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\big_gan",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          },
+          {
+            "name": "celebahq",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\celebahq",
+            "image_count": 30000,
+            "by_extension": {
+              ".jpg": 30000
+            }
+          },
+          {
+            "name": "cips",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\cips",
+            "image_count": 11200,
+            "by_extension": {
+              ".jpg": 11200
+            }
+          },
+          {
+            "name": "coco",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\coco",
+            "image_count": 163846,
+            "by_extension": {
+              ".jpg": 163846
+            }
+          },
+          {
+            "name": "cycle_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\cycle_gan",
+            "image_count": 15210,
+            "by_extension": {
+              ".jpg": 15210
+            }
+          },
+          {
+            "name": "ddpm",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\ddpm",
+            "image_count": 896,
+            "by_extension": {
+              ".jpg": 896
+            }
+          },
+          {
+            "name": "denoising_diffusion_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\denoising_diffusion_gan",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          },
+          {
+            "name": "diffusion_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\diffusion_gan",
+            "image_count": 15507,
+            "by_extension": {
+              ".jpg": 15507
+            }
+          },
+          {
+            "name": "face_synthetics",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\face_synthetics",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          },
+          {
+            "name": "ffhq",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\ffhq",
+            "image_count": 70000,
+            "by_extension": {
+              ".jpg": 70000
+            }
+          },
+          {
+            "name": "gansformer",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\gansformer",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          },
+          {
+            "name": "gau_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\gau_gan",
+            "image_count": 7000,
+            "by_extension": {
+              ".jpg": 7000
+            }
+          },
+          {
+            "name": "generative_inpainting",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\generative_inpainting",
+            "image_count": 22000,
+            "by_extension": {
+              ".jpg": 22000
+            }
+          },
+          {
+            "name": "glide",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\glide",
+            "image_count": 20903,
+            "by_extension": {
+              ".jpg": 20903
+            }
+          },
+          {
+            "name": "imagenet",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\imagenet",
+            "image_count": 96788,
+            "by_extension": {
+              ".jpg": 96788
+            }
+          },
+          {
+            "name": "lama",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\lama",
+            "image_count": 24705,
+            "by_extension": {
+              ".jpg": 24705
+            }
+          },
+          {
+            "name": "landscape",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\landscape",
+            "image_count": 4318,
+            "by_extension": {
+              ".jpg": 4318
+            }
+          },
+          {
+            "name": "latent_diffusion",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\latent_diffusion",
+            "image_count": 20000,
+            "by_extension": {
+              ".jpg": 20000
+            }
+          },
+          {
+            "name": "lsun",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\lsun",
+            "image_count": 539163,
+            "by_extension": {
+              ".jpg": 539163
+            }
+          },
+          {
+            "name": "mat",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\mat",
+            "image_count": 60000,
+            "by_extension": {
+              ".jpg": 60000
+            }
+          },
+          {
+            "name": "metfaces",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\metfaces",
+            "image_count": 1336,
+            "by_extension": {
+              ".jpg": 1336
+            }
+          },
+          {
+            "name": "palette",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\palette",
+            "image_count": 6000,
+            "by_extension": {
+              ".jpg": 6000
+            }
+          },
+          {
+            "name": "pro_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\pro_gan",
+            "image_count": 40000,
+            "by_extension": {
+              ".jpg": 40000
+            }
+          },
+          {
+            "name": "projected_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\projected_gan",
+            "image_count": 12000,
+            "by_extension": {
+              ".jpg": 12000
+            }
+          },
+          {
+            "name": "sfhq",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\sfhq",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          },
+          {
+            "name": "stable_diffusion",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\stable_diffusion",
+            "image_count": 21444,
+            "by_extension": {
+              ".jpg": 21444
+            }
+          },
+          {
+            "name": "star_gan",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\star_gan",
+            "image_count": 9995,
+            "by_extension": {
+              ".jpg": 9995
+            }
+          },
+          {
+            "name": "stylegan1",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\stylegan1",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          },
+          {
+            "name": "stylegan2",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\stylegan2",
+            "image_count": 1000000,
+            "by_extension": {
+              ".jpg": 1000000
+            }
+          },
+          {
+            "name": "stylegan3",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\stylegan3",
+            "image_count": 97494,
+            "by_extension": {
+              ".jpg": 97494
+            }
+          },
+          {
+            "name": "taming_transformer",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\taming_transformer",
+            "image_count": 105000,
+            "by_extension": {
+              ".jpg": 105000
+            }
+          },
+          {
+            "name": "vq_diffusion",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_downloads\\vq_diffusion",
+            "image_count": 10000,
+            "by_extension": {
+              ".jpg": 10000
+            }
+          }
+        ]
+      },
+      "_raw": {
+        "total_images": 0,
+        "sources": [
+          {
+            "name": "hf_midjourney_dalle_sd_nano",
+            "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\_raw\\hf_midjourney_dalle_sd_nano",
+            "image_count": 0,
+            "by_extension": {}
+          }
+        ]
+      }
+    }
+  },
+  "raw_manifests": {
+    "metadata": {
+      "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\metadata",
+      "total_images": 80,
+      "by_split": {
+        "train": {
+          "total_images": 56,
+          "by_label": {
+            "ai_generated": 30,
+            "real": 26
+          },
+          "by_source": {
+            "tiny_fixture_ai": 30,
+            "tiny_fixture_real": 26
+          }
+        },
+        "val": {
+          "total_images": 12,
+          "by_label": {
+            "ai_generated": 7,
+            "real": 5
+          },
+          "by_source": {
+            "tiny_fixture_ai": 7,
+            "tiny_fixture_real": 5
+          }
+        },
+        "test": {
+          "total_images": 12,
+          "by_label": {
+            "ai_generated": 3,
+            "real": 9
+          },
+          "by_source": {
+            "tiny_fixture_ai": 3,
+            "tiny_fixture_real": 9
+          }
+        }
+      }
+    },
+    "metadata_3class": {
+      "path": "C:\\Users\\User2\\Documents\\Xabarnavis .01\\data\\raw\\xabarnavis_datasets\\metadata_3class",
+      "total_images": 335484,
+      "by_split": {
+        "train": {
+          "total_images": 268392,
+          "by_label": {
+            "ai_generated": 89464,
+            "manipulated": 89464,
+            "real": 89464
+          },
+          "by_source": {
+            "artifact_afhq": 2662,
+            "artifact_big_gan": 541,
+            "artifact_celebahq": 2470,
+            "artifact_cips": 653,
+            "artifact_coco": 13341,
+            "artifact_cycle_gan": 1025,
+            "artifact_ddpm": 49,
+            "artifact_denoising_diffusion_gan": 584,
+            "artifact_diffusion_gan": 913,
+            "artifact_face_synthetics": 584,
+            "artifact_ffhq": 5769,
+            "artifact_gansformer": 595,
+            "artifact_gau_gan": 406,
+            "artifact_generative_inpainting": 18785,
+            "artifact_glide": 1199,
+            "artifact_imagenet": 7872,
+            "artifact_lama": 21189,
+            "artifact_landscape": 334,
+            "artifact_latent_diffusion": 1186,
+            "artifact_lsun": 43900,
+            "artifact_mat": 51454,
+            "artifact_metfaces": 115,
+            "artifact_palette": 354,
+            "artifact_pro_gan": 2751,
+            "artifact_projected_gan": 694,
+            "artifact_sfhq": 598,
+            "artifact_stable_diffusion": 1293,
+            "artifact_star_gan": 571,
+            "artifact_stylegan1": 571,
+            "artifact_stylegan2": 57940,
+            "artifact_stylegan3": 5636,
+            "artifact_taming_transformer": 5993,
+            "artifact_vq_diffusion": 585,
+            "casia_authentic": 607,
+            "casia_v2": 4132,
+            "coco_real": 9645,
+            "hf_midjourney_dalle_sd_nano": 368,
+            "hf_real_midjourney_dalle_sd_nano": 479,
+            "local_camera_real": 2,
+            "local_generated": 3,
+            "synthbuster": 544
+          }
+        },
+        "val": {
+          "total_images": 33546,
+          "by_label": {
+            "ai_generated": 11182,
+            "manipulated": 11182,
+            "real": 11182
+          },
+          "by_source": {
+            "artifact_afhq": 313,
+            "artifact_big_gan": 84,
+            "artifact_celebahq": 311,
+            "artifact_cips": 76,
+            "artifact_coco": 1684,
+            "artifact_cycle_gan": 108,
+            "artifact_ddpm": 5,
+            "artifact_denoising_diffusion_gan": 75,
+            "artifact_diffusion_gan": 108,
+            "artifact_face_synthetics": 82,
+            "artifact_ffhq": 684,
+            "artifact_gansformer": 79,
+            "artifact_gau_gan": 50,
+            "artifact_generative_inpainting": 2381,
+            "artifact_glide": 164,
+            "artifact_imagenet": 1016,
+            "artifact_lama": 2623,
+            "artifact_landscape": 41,
+            "artifact_latent_diffusion": 139,
+            "artifact_lsun": 5516,
+            "artifact_mat": 6450,
+            "artifact_metfaces": 10,
+            "artifact_palette": 40,
+            "artifact_pro_gan": 363,
+            "artifact_projected_gan": 75,
+            "artifact_sfhq": 65,
+            "artifact_stable_diffusion": 165,
+            "artifact_star_gan": 81,
+            "artifact_stylegan1": 59,
+            "artifact_stylegan2": 7213,
+            "artifact_stylegan3": 693,
+            "artifact_taming_transformer": 724,
+            "artifact_vq_diffusion": 88,
+            "casia_authentic": 89,
+            "casia_v2": 525,
+            "coco_real": 1173,
+            "hf_midjourney_dalle_sd_nano": 52,
+            "hf_real_midjourney_dalle_sd_nano": 68,
+            "synthbuster": 74
+          }
+        },
+        "test": {
+          "total_images": 33546,
+          "by_label": {
+            "ai_generated": 11182,
+            "manipulated": 11182,
+            "real": 11182
+          },
+          "by_source": {
+            "artifact_afhq": 321,
+            "artifact_big_gan": 75,
+            "artifact_celebahq": 295,
+            "artifact_cips": 94,
+            "artifact_coco": 1732,
+            "artifact_cycle_gan": 135,
+            "artifact_ddpm": 7,
+            "artifact_denoising_diffusion_gan": 75,
+            "artifact_diffusion_gan": 92,
+            "artifact_face_synthetics": 74,
+            "artifact_ffhq": 752,
+            "artifact_gansformer": 74,
+            "artifact_gau_gan": 51,
+            "artifact_generative_inpainting": 2372,
+            "artifact_glide": 171,
+            "artifact_imagenet": 992,
+            "artifact_lama": 2679,
+            "artifact_landscape": 47,
+            "artifact_latent_diffusion": 146,
+            "artifact_lsun": 5413,
+            "artifact_mat": 6432,
+            "artifact_metfaces": 18,
+            "artifact_palette": 45,
+            "artifact_pro_gan": 331,
+            "artifact_projected_gan": 82,
+            "artifact_sfhq": 68,
+            "artifact_stable_diffusion": 161,
+            "artifact_star_gan": 84,
+            "artifact_stylegan1": 65,
+            "artifact_stylegan2": 7224,
+            "artifact_stylegan3": 711,
+            "artifact_taming_transformer": 768,
+            "artifact_vq_diffusion": 64,
+            "casia_authentic": 84,
+            "casia_v2": 466,
+            "coco_real": 1189,
+            "hf_midjourney_dalle_sd_nano": 33,
+            "hf_real_midjourney_dalle_sd_nano": 59,
+            "local_generated": 1,
+            "synthbuster": 64
+          }
+        }
+      }
+    }
+  },
+  "data/ready/image": {
+    "total_images": 2800,
+    "filesystem_total_images": 2800,
+    "by_split": {
+      "train": {
+        "total_images": 2000,
+        "by_label": {
+          "ai_generated": 1000,
+          "real": 1000
+        },
+        "by_source": {
+          "artifact_afhq": 27,
+          "artifact_big_gan": 32,
+          "artifact_celebahq": 31,
+          "artifact_cips": 37,
+          "artifact_coco": 160,
+          "artifact_cycle_gan": 30,
+          "artifact_denoising_diffusion_gan": 38,
+          "artifact_diffusion_gan": 46,
+          "artifact_face_synthetics": 27,
+          "artifact_ffhq": 55,
+          "artifact_gansformer": 25,
+          "artifact_gau_gan": 24,
+          "artifact_generative_inpainting": 69,
+          "artifact_glide": 68,
+          "artifact_imagenet": 96,
+          "artifact_lama": 66,
+          "artifact_landscape": 5,
+          "artifact_latent_diffusion": 64,
+          "artifact_lsun": 473,
+          "artifact_mat": 178,
+          "artifact_palette": 17,
+          "artifact_pro_gan": 88,
+          "artifact_projected_gan": 34,
+          "artifact_sfhq": 30,
+          "artifact_stable_diffusion": 55,
+          "artifact_star_gan": 29,
+          "artifact_stylegan1": 26,
+          "casia_authentic": 5,
+          "coco_real": 115,
+          "hf_midjourney_dalle_sd_nano": 23,
+          "hf_real_midjourney_dalle_sd_nano": 4,
+          "synthbuster": 23
+        }
+      },
+      "val": {
+        "total_images": 400,
+        "by_label": {
+          "ai_generated": 200,
+          "real": 200
+        },
+        "by_source": {
+          "artifact_afhq": 6,
+          "artifact_big_gan": 5,
+          "artifact_celebahq": 6,
+          "artifact_cips": 6,
+          "artifact_coco": 28,
+          "artifact_cycle_gan": 3,
+          "artifact_denoising_diffusion_gan": 9,
+          "artifact_diffusion_gan": 9,
+          "artifact_face_synthetics": 2,
+          "artifact_ffhq": 12,
+          "artifact_gansformer": 7,
+          "artifact_gau_gan": 4,
+          "artifact_generative_inpainting": 12,
+          "artifact_glide": 9,
+          "artifact_imagenet": 21,
+          "artifact_lama": 13,
+          "artifact_landscape": 1,
+          "artifact_latent_diffusion": 15,
+          "artifact_lsun": 103,
+          "artifact_mat": 40,
+          "artifact_palette": 10,
+          "artifact_pro_gan": 18,
+          "artifact_projected_gan": 7,
+          "artifact_sfhq": 2,
+          "artifact_stable_diffusion": 10,
+          "artifact_star_gan": 8,
+          "artifact_stylegan1": 11,
+          "casia_authentic": 1,
+          "coco_real": 16,
+          "hf_real_midjourney_dalle_sd_nano": 1,
+          "synthbuster": 5
+        }
+      },
+      "test": {
+        "total_images": 400,
+        "by_label": {
+          "ai_generated": 200,
+          "real": 200
+        },
+        "by_source": {
+          "artifact_afhq": 5,
+          "artifact_big_gan": 8,
+          "artifact_celebahq": 8,
+          "artifact_cips": 8,
+          "artifact_coco": 34,
+          "artifact_cycle_gan": 4,
+          "artifact_denoising_diffusion_gan": 10,
+          "artifact_diffusion_gan": 11,
+          "artifact_face_synthetics": 3,
+          "artifact_ffhq": 16,
+          "artifact_gansformer": 5,
+          "artifact_gau_gan": 3,
+          "artifact_generative_inpainting": 12,
+          "artifact_glide": 13,
+          "artifact_imagenet": 18,
+          "artifact_lama": 14,
+          "artifact_latent_diffusion": 11,
+          "artifact_lsun": 89,
+          "artifact_mat": 34,
+          "artifact_metfaces": 2,
+          "artifact_palette": 2,
+          "artifact_pro_gan": 15,
+          "artifact_projected_gan": 9,
+          "artifact_sfhq": 3,
+          "artifact_stable_diffusion": 14,
+          "artifact_star_gan": 7,
+          "artifact_stylegan1": 4,
+          "casia_authentic": 4,
+          "coco_real": 21,
+          "hf_midjourney_dalle_sd_nano": 7,
+          "synthbuster": 6
+        }
+      }
+    },
+    "by_label": {
+      "ai_generated": 1400,
+      "real": 1400
+    },
+    "by_source": {
+      "artifact_afhq": 38,
+      "artifact_big_gan": 45,
+      "artifact_celebahq": 45,
+      "artifact_cips": 51,
+      "artifact_coco": 222,
+      "artifact_cycle_gan": 37,
+      "artifact_denoising_diffusion_gan": 57,
+      "artifact_diffusion_gan": 66,
+      "artifact_face_synthetics": 32,
+      "artifact_ffhq": 83,
+      "artifact_gansformer": 37,
+      "artifact_gau_gan": 31,
+      "artifact_generative_inpainting": 93,
+      "artifact_glide": 90,
+      "artifact_imagenet": 135,
+      "artifact_lama": 93,
+      "artifact_landscape": 6,
+      "artifact_latent_diffusion": 90,
+      "artifact_lsun": 665,
+      "artifact_mat": 252,
+      "artifact_metfaces": 2,
+      "artifact_palette": 29,
+      "artifact_pro_gan": 121,
+      "artifact_projected_gan": 50,
+      "artifact_sfhq": 35,
+      "artifact_stable_diffusion": 79,
+      "artifact_star_gan": 44,
+      "artifact_stylegan1": 41,
+      "casia_authentic": 10,
+      "coco_real": 152,
+      "hf_midjourney_dalle_sd_nano": 30,
+      "hf_real_midjourney_dalle_sd_nano": 5,
+      "synthbuster": 34
+    },
+    "by_extension": {
+      ".jpg": 2749,
+      ".png": 34,
+      ".webp": 17
+    }
+  },
+  "grand_total_images": 155476
+}

@@ -1,0 +1,4 @@
+models:
+  - id: audio_04_wav2vec2
+    task: audio_authenticity
+    status: experimental

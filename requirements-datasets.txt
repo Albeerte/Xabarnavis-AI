@@ -1,0 +1,4 @@
+kaggle>=1.6.17
+kagglehub>=0.3.12
+huggingface-hub>=0.24.0
+pyarrow>=16.0.0

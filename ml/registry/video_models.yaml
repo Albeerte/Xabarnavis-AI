@@ -1,0 +1,4 @@
+models:
+  - id: video_naman712_spectra_ensemble
+    task: video_deepfake_analysis
+    status: adapter-integrated

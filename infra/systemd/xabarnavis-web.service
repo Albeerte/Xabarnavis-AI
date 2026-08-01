@@ -1,0 +1,11 @@
+[Unit]
+Description=Xabarnavis Next.js web service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/xabarnavis/apps/web
+ExecStart=/usr/bin/pnpm start
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

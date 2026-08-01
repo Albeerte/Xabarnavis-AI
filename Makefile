@@ -1,0 +1,14 @@
+﻿.PHONY: api web dev stop
+
+api:
+	cd apps/api && python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
+
+web:
+	cd apps/web && pnpm dev
+
+dev:
+	python manage.py runserver
+
+stop:
+	python manage.py stopserver
+

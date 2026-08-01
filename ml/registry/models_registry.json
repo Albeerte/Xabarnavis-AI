@@ -1,0 +1,82 @@
+{
+  "image_ai_real_effnet_b0_balanced": {
+    "status": "trained",
+    "input": "image",
+    "task": "AI-generated vs real image detection",
+    "labels": {
+      "0": "real",
+      "1": "ai_generated"
+    },
+    "dataset_size": "large balanced local split",
+    "path": "artifacts/runs/legacy/ai_real_effnet_b0_balanced/",
+    "artifact": "artifacts/runs/legacy/ai_real_effnet_b0_balanced/best.pt",
+    "created_at": "2026-06-27T15:08:48.996676+00:00",
+    "metrics": {
+      "best_auc": 0.9978977406218185,
+      "test_accuracy": 0.9684734513274337,
+      "test_precision_ai": 0.9774520856820744,
+      "test_recall_ai": 0.959070796460177,
+      "test_f1_ai": 0.9681742043551089,
+      "test_auc": 0.9966532715952697
+    },
+    "note": "Validate on unseen generators and social-media-compressed images before forensic use."
+  },
+  "image_ai_real_v2_hf": {
+    "status": "trained",
+    "input": "image",
+    "task": "AI-generated vs real image detection",
+    "labels": {
+      "0": "real",
+      "1": "ai_generated"
+    },
+    "dataset_size": "large local split",
+    "path": "artifacts/runs/legacy/ai_real_v2_hf/",
+    "artifact": "artifacts/runs/legacy/ai_real_v2_hf/best.pt",
+    "metrics": {
+      "test_accuracy": 0.9417631917631918,
+      "test_precision_ai": 0.944336569579288,
+      "test_recall_ai": 0.9388674388674388,
+      "test_f1_ai": 0.941594062600839,
+      "test_auc": 0.9862885499951137
+    },
+    "note": "Strong baseline; keep as comparison model."
+  },
+  "image_ai_real_xabarnavis_ready_gpu": {
+    "status": "trained",
+    "input": "image",
+    "task": "AI-generated vs real image detection",
+    "labels": {
+      "0": "real",
+      "1": "ai_generated"
+    },
+    "dataset_size": "2803 ready images plus large raw dataset",
+    "path": "artifacts/runs/legacy/ai_real_xabarnavis_ready_gpu/",
+    "artifact": "artifacts/runs/legacy/ai_real_xabarnavis_ready_gpu/best.pt",
+    "created_at": "2026-07-01T08:18:15.003587+00:00",
+    "metrics": {
+      "best_auc": 0.72995,
+      "test_accuracy": 0.665,
+      "test_precision_ai": 0.6964285714285714,
+      "test_recall_ai": 0.585,
+      "test_f1_ai": 0.6358695652173914,
+      "test_auc": 0.712925
+    },
+    "note": "Ready-dataset run is useful for repeatable smoke testing, not final forensic scoring."
+  },
+  "audio_04_wav2vec2": {
+    "status": "experimental",
+    "input": "audio",
+    "task": "Audio authenticity and synthetic speech analysis",
+    "path": "artifacts/runs/legacy/audio_04_wav2vec2/",
+    "note": "Add exported metrics after the next evaluation run."
+  },
+  "video_naman712_spectra_ensemble": {
+    "status": "adapter-integrated",
+    "input": "video",
+    "task": "Video and extracted-audio deepfake analysis",
+    "path": "apps/api/app/services/video_models/",
+    "note": "External model weights are kept outside Git and documented through adapters."
+  }
+}
+
+

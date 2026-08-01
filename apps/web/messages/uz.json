@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "analyze": "Tekshiruv",
+    "reports": "Hisobotlar",
+    "pricing": "Narxlar",
+    "api": "API",
+    "contact": "Aloqa"
+  },
+  "auth": {
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "wrongCredentials": "Email yoki parol noto'g'ri."
+  },
+  "dashboard": {
+    "totalReports": "Jami hisobotlar",
+    "fakeDetected": "Soxta topildi"
+  },
+  "analyze": {
+    "uploadFile": "Fayl yuklash",
+    "selectType": "Tekshiruv turini tanlang"
+  },
+  "report": {
+    "verdict": "Yakuniy qaror",
+    "confidence": "Ishonchlilik",
+    "downloadPdf": "PDF yuklab olish",
+    "downloadDocx": "DOCX yuklab olish",
+    "qrCode": "QR kod"
+  },
+  "status": {
+    "authentic": "Haqiqiy",
+    "suspicious": "Shubhali",
+    "fake": "Soxta",
+    "aiGenerated": "AI yaratilgan",
+    "manipulated": "Manipulyatsiya qilingan"
+  },
+  "notification": {
+    "analysisCompleted": "Tahlil yakunlandi"
+  }
+}
