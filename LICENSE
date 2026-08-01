@@ -1,5 +1,53 @@
-Proprietary - All rights reserved.
+# Xabarnavis AI — Notices and Disclaimers
 
-Copyright (c) 2026 Xabarnavis.
+Copyright © 2026 Abduxoliq Solijonov.
+Licensed under the MIT License.
 
-This repository is provided for private research, development, and award demonstration use unless a separate license is granted in writing.
+## Forensic-use disclaimer
+
+Xabarnavis AI is a research and decision-support system. Its outputs,
+scores, heatmaps, classifications, and generated reports do not constitute
+conclusive proof, legal advice, or an expert forensic opinion.
+
+Results must be independently reviewed by qualified professionals and
+evaluated together with source provenance, metadata, chain-of-custody
+records, contextual evidence, and applicable legal requirements.
+
+The software must not be used as the sole basis for legal, disciplinary,
+employment, financial, medical, or law-enforcement decisions.
+
+## AI model and dataset notice
+
+Third-party models, datasets, libraries, and other dependencies remain
+subject to their respective licenses, usage restrictions, attribution
+requirements, and acceptable-use policies.
+
+The MIT License for this repository does not automatically grant rights to
+third-party model weights, datasets, trademarks, media, or other separately
+licensed materials.
+
+Users are responsible for confirming that they have permission to process,
+store, distribute, and analyze submitted media.
+
+## Privacy and security
+
+Users are responsible for protecting personal information, credentials,
+uploaded evidence, reports, and model outputs. Production deployments should
+use appropriate authentication, encryption, access controls, retention
+policies, backups, and audit logging.
+
+## No endorsement
+
+References to third-party products, models, organizations, or services do not
+imply endorsement, sponsorship, or affiliation.
+
+## Trademarks
+
+“Xabarnavis AI,” its name, logos, and visual identity are not granted for use
+under the MIT License except as reasonably necessary to describe the origin
+of the software.
+
+## Contact
+
+Project owner: Abduxoliq Solijonov  
+GitHub: https://github.com/Albeerte/Xabarnavis-AI
